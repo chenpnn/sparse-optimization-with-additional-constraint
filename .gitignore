@@ -174,3 +174,4 @@ cython_debug/
 *.csv
 *.png
 *.pdf
+simulation/

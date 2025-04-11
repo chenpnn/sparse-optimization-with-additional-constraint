@@ -20,6 +20,7 @@ class SCD(object):
     supp_init: list
         initialzed support set
     """
+    
     def __init__(
         self,
         sparsity,
@@ -67,6 +68,9 @@ class SCD(object):
         self.supp_set = np.sort(supp_set)
         self.coef_ = w
         return self
+    
+    def fit(self, X, y):
+        self.solve(X, y)
 
 if __name__ == "__main__":
     n, p, s = 500, 100000, 5
